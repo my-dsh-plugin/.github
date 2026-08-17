@@ -13,6 +13,7 @@
 | [session-archive-manager](https://github.com/my-dsh-plugin/session-archive-manager) | 在设置页查看并管理归档会话：取消归档、删除、批量删除、全量删除，按工作区分组展示。Manages archived sessions from Settings: view, unarchive, delete, batch delete, delete all. |
 | [readonly-security-audit](https://github.com/my-dsh-plugin/readonly-security-audit) | 只读安全审计模式的**实验性插件版**：自动只读、工具级白名单、强制报告交付选择。日常使用推荐 [dsh-presets](https://github.com/my-dsh-plugin/dsh-presets) 中的纯预设版。Experimental plugin edition of the read-only audit mode (auto read-only, tool allowlist, mandatory delivery); the pure-preset edition lives in dsh-presets. |
 | [agent-mode-switcher](https://github.com/my-dsh-plugin/agent-mode-switcher) | 模型回答完毕后，可在当前会话切换 Agent 预设（标准/PTC/极简等）并继续对话；随附 Harness 核心补丁。Switches the current session's agent preset (mode) after the model answers and keeps chatting; ships a small harness core patch. |
+| [dsh-skill-manager](https://github.com/my-dsh-plugin/dsh-skill-manager) | 在设置页从 GitHub 仓库安装/更新/卸载 Skills，按项目/全局分组展示已加载技能，可选只读兼容加载 Claude Code 的 .claude/skills；需一行 settings 暴露补丁。Install, update and uninstall Skills from GitHub tarballs, list loaded skills grouped by scope, with optional Claude Code .claude/skills compatibility; requires a one-line settings-exposure patch. |
 
 ---
 
@@ -73,6 +74,7 @@ irm https://raw.githubusercontent.com/my-dsh-plugin/dsh-presets/main/readonly-au
 - [x] 只读安全审计（readonly-security-audit）：实验性插件版（自动只读/白名单）+ dsh-presets 纯预设版
 - [x] 会话中途模式切换插件（agent-mode-switcher）：标题栏切换器 + Harness 核心补丁
 - [x] 预设模式合集（dsh-presets）：锚定极简（V4 Pro 锚定）、只读安全审计纯预设版，脚本式跨平台安装
+- [x] Skills 安装管理器（dsh-skill-manager）：设置页安装/更新/卸载技能 + 已加载分组总览 + Claude 兼容加载
 - [ ] 插件开发脚手架 / 模板项目
 - [ ] 核心功能与工作流扩展（更多供应商适配、批量配置管理）
 - [ ] 自动化测试与部署脚本（CI、发布流程）
